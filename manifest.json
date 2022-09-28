@@ -1,6 +1,14 @@
 {
-    "name": "Hua & Roman's Troll Extension",
-    "description": "Build an Extension!",
-    "version": "1.0",
-    "manifest_version": 3
+  "name": "Hua & Roman's Troll Extension",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "author": "Sampurna Chapagain",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Latest Covid Report"
   }
+}
