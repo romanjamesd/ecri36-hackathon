@@ -3,6 +3,7 @@
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
+  "web_accessible_resources" : ["hua-and-roman.png"],
   "background": {
     "service_worker": "background.js"
   },
@@ -14,8 +15,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["main.js"],
+      "js": ["main.js", "addHuaAndRoman.js"],
       "css": ["styles.css"]
-    }
-  ]
+    }]
 }
