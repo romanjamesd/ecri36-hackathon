@@ -1,6 +1,21 @@
 {
-    "name": "Hua & Roman's Troll Extension",
-    "description": "Build an Extension!",
-    "version": "1.0",
-    "manifest_version": 3
-  }
+  "name": "Hua & Roman's Troll Extension",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "author": "Hua & Roman",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Troll Extension"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
